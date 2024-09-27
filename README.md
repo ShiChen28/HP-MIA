@@ -4,9 +4,11 @@ This project provides the functions for calculating the scores of the various me
 
 # HP-MIA
 Paper
+
 HP-MIA: A novel membership inference attack scheme for high membership prediction precision
 
 Link
+
 https://www.sciencedirect.com/science/article/abs/pii/S0167404823004819
 
 Cite
