@@ -1,6 +1,6 @@
 # Code
 The core of the code for HP-MIA.
-This project provides the functions for calculating the memberships scores (computer_score.py) as well as the architecture of the neural network models used for testing (models.py).
+This project provides the functions for calculating the memberships scores (compute_score.py) as well as the architecture of the neural network models used for testing (models.py).
 
 # HP-MIA
 HP-MIA: A novel membership inference attack scheme for high membership prediction precision
