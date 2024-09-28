@@ -7,6 +7,8 @@ HP-MIA: A novel membership inference attack scheme for high membership predictio
 
 Link
 
+https://static.aminer.cn/upload/pdf/28/1035/1355/65497cb4939a5f4082b36359_1.pdf
+
 https://www.sciencedirect.com/science/article/abs/pii/S0167404823004819
 
 Cite
