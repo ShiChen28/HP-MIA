@@ -5,9 +5,6 @@ HP-MIA: A novel membership inference attack scheme for high membership predictio
 The core of the code for HP-MIA.
 This project provides the functions for calculating the membership scores (Compute_score.py) as well as the architecture of the neural network models used for testing (models.py).
 
-If there is anything you would like to discuss, please contact shichen2001x@gmail.com.
-
-
 ## Abstract
 
 Membership Inference Attacks (MIAs) have been considered as one of the major privacy threats in recent years, especially in machine learning models. Most canonical MIAs identify whether a specific data point was presented in the confidential training set of a neural network by analyzing its output pattern on such data point. However, these methods heavily rely on overfitting and are difficult to achieve high precision. Although some recent works, such as difficulty calibration techniques, have tried to tackle this problem in a tentative manner, identifying members with high precision is still a difficult task.
@@ -41,3 +38,6 @@ numpages = {15},
 keywords = {Machine learning, Deep learning, Privacy protection, Membership inference attack}
 }
 ```
+
+## Contact
+If there is anything you would like to discuss, please contact shichen2001x@gmail.com.
