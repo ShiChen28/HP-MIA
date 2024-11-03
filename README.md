@@ -26,13 +26,14 @@ https://www.sciencedirect.com/science/article/abs/pii/S0167404823004819
 
 ## Citation
 ```
-@article{Chen2023HPMIA,
+@article{Chen2024HPMIA,
   title={HP-MIA: A novel membership inference attack scheme for high membership prediction precision},
   author={Shi Chen and Wennan Wang and Yubin Zhong and Zuobin Ying and Weixuan Tang and Zijie Pan},
-  journal={Comput. Secur.},
-  year={2023},
+  journal={Computers \& Security},
   volume={136},
   pages={103571},
+  year={2024},
+  publisher={Elsevier}
 }
 ```
 
