@@ -11,11 +11,8 @@ This repository provides the functions for calculating the membership scores (`C
 
 Please refer to `requirements.txt` to configure the environment.
 
-We would like to thank and acknowledge referenced codes from
-
-[ml-leaks-pytorch](https://github.com/GeorgeTzannetos/ml-leaks-pytorch)
-[membership-inference-evaluation](https://github.com/inspire-group/membership-inference-evaluation)
-[Purchase100 and Texas100 dataset](https://github.com/xehartnort/Purchase100-Texas100-datasets)
+This implementation takes referenced codes from [ml-leaks-pytorch](https://github.com/GeorgeTzannetos/ml-leaks-pytorch),
+[membership-inference-evaluation](https://github.com/inspire-group/membership-inference-evaluation) and [Purchase100 and Texas100 dataset](https://github.com/xehartnort/Purchase100-Texas100-datasets).Thank the authors for their excellent work!
 
 ## Abstract
 
