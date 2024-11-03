@@ -1,6 +1,9 @@
 # HP-MIA
 HP-MIA: A novel membership inference attack scheme for high membership prediction precision
 
+![teaserfigure](Overview.png)
+
+
 ## Code
 The core of the code for HP-MIA.
 
