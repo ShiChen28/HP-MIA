@@ -11,6 +11,12 @@ This repository provides the functions for calculating the membership scores (`C
 
 Please refer to `requirements.txt` to configure the environment.
 
+We would like to thank and acknowledge referenced codes from
+
+[ml-leaks-pytorch](https://github.com/GeorgeTzannetos/ml-leaks-pytorch)
+[membership-inference-evaluation](https://github.com/inspire-group/membership-inference-evaluation)
+[Purchase100 and Texas100 dataset](https://github.com/xehartnort/Purchase100-Texas100-datasets)
+
 ## Abstract
 
 Membership Inference Attacks (MIAs) have been considered as one of the major privacy threats in recent years, especially in machine learning models. Most canonical MIAs identify whether a specific data point was presented in the confidential training set of a neural network by analyzing its output pattern on such data point. However, these methods heavily rely on overfitting and are difficult to achieve high precision. Although some recent works, such as difficulty calibration techniques, have tried to tackle this problem in a tentative manner, identifying members with high precision is still a difficult task.
