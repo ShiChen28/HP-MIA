@@ -20,9 +20,9 @@ To address above challenge, in this paper we rethink how overfitting impacts MIA
 
 ## Paper Link
 
-https://static.aminer.cn/upload/pdf/28/1035/1355/65497cb4939a5f4082b36359_1.pdf
+[Aminer](https://static.aminer.cn/upload/pdf/28/1035/1355/65497cb4939a5f4082b36359_1.pdf)
 
-https://www.sciencedirect.com/science/article/abs/pii/S0167404823004819
+[Elsevier](https://www.sciencedirect.com/science/article/abs/pii/S0167404823004819)
 
 ## Citation
 ```
