@@ -7,9 +7,9 @@ HP-MIA: A novel membership inference attack scheme for high membership predictio
 ## Code
 The core of the code for HP-MIA (PyTorch implementation).
 
-This repository provides the functions for calculating the membership scores (`HP-MIA\Compute_score.py`) as well as the architecture of the neural network models used for testing (`HP-MIA\models.py`).
+This repository provides the functions for calculating the membership scores (`HP-MIA/Compute_score.py`) as well as the architecture of the neural network models used for testing (`HP-MIA/models.py`).
 
-Please refer to `HP-MIA\requirements.txt` to configure the environment.
+Please refer to `HP-MIA/requirements.txt` to configure the environment.
 
 This implementation references codes from [ml-leaks-pytorch](https://github.com/GeorgeTzannetos/ml-leaks-pytorch), 
 [membership-inference-evaluation](https://github.com/inspire-group/membership-inference-evaluation) and [Purchase100 and Texas100 dataset](https://github.com/xehartnort/Purchase100-Texas100-datasets). Thank the authors for their excellent work !
