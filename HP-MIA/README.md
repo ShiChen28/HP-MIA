@@ -13,7 +13,9 @@ As a test case for HP-MIA, two `ipynb` files provide the implementation on Purch
 
 ## Test on your own datasets/models
 
-This repository only provided models trained on Purchase100. If you want to test on other datasets, please refer to `Train_ref_Purchase.ipynb` to train your own model. You can add your own neural network structure in `models.py` if you need to. Processing for seven common datasets (mnist, fashionmnist, emnist, cifar, cifar100, purchase100 and texas100) is provided in `my_dataloader.py`. If you want to test other datasets, you need to refine the processing of the new datasets in this file.
+This repository only provided models trained on Purchase100. If you want to test on other datasets, please refer to `Train_ref_Purchase.ipynb` to train your own model. You can add your own neural network structure in `models.py` if you need to. The `data` folder is used to store dataset files. Processing for seven common datasets (mnist, fashionmnist, emnist, cifar, cifar100, purchase100 and texas100) is provided in `my_dataloader.py`. If you want to test other datasets, you need to refine the processing of the new datasets in this file. 
+
+After completing the preparations for model and dataset loader, you can start your own experiments by simply modifying the variables `dataset` and `Net` in `Train_ref_Purchase.ipynb` and `attack_exp_purchase.ipynb` ！
 
 ## Acknowledgement
 This implementation references codes from [ml-leaks-pytorch](https://github.com/GeorgeTzannetos/ml-leaks-pytorch), 
