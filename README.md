@@ -27,8 +27,6 @@ To address above challenge, in this paper we rethink how overfitting impacts MIA
 
 ## Citation
 
-If you use this project, please cite the relevant paper:
-
 ```
 @article{Chen2024HPMIA,
   title={HP-MIA: A novel membership inference attack scheme for high membership prediction precision},
