@@ -1,5 +1,7 @@
 # Code for HP-MIA
 
+HP-MIA: A novel membership inference attack scheme for high membership prediction precision
+
 ## Requirements
 Please refer to `requirements.txt` to configure the environment.
 
