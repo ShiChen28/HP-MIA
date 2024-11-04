@@ -65,9 +65,6 @@ def subsetloader(ls_indices, start, end, trainset, batch_size):
     return loader
 
 
-#  The main dataloader used. Can return 4 differents dataloaders for each different split based on the paper's
-#  methodology and a testloader, for both CIFAR10 and MNIST.
-
 
 def dataloader(dataset="cifar", batch_size_train = 128, batch_size_test=1000):
     """
