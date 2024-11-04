@@ -7,7 +7,6 @@ import numpy as np
 from my_dataloader import dataloader
 from train_eval import train, eval_model
 import matplotlib.pyplot as plt  
-from opacus.utils.batch_memory_manager import BatchMemoryManager
 
 def Train_shadowmodel(shadow_net, shadow_train_loader, shadow_loss, shadow_optim, n_epochs, testloader, shadow_path, save_new_models =1):
     print("start training shadow model: ")
@@ -41,70 +40,11 @@ def Train_targetmodel(target_net, target_train_loader, target_loss, target_optim
             if not os.path.exists("./models"):
                 os.mkdir("./models")  # Create the folder models if it doesn't exist
             torch.save(target_net.state_dict(), target_path)
-                
-def Train_dp_targetmodel(model, train_loader, testloader, optimizer, epochs, max_physical_batch_size, device, privacy_engine, DELTA, save_path, save_new_models = 1):
-    print("start training target model:")
-    for epoch in range(epochs):
-        DP_train(model, train_loader, optimizer,  epoch, epochs, max_physical_batch_size, device, privacy_engine, DELTA, save_path, save_new_models = 1)
-        if (epoch + 1)%100 == 0 or epoch == epochs - 1:
-            accuracy_train_target = eval_model(model,train_loader,report=False)
-            accuracy_test_target = eval_model(model,testloader,report = False)
-            print("Target model: epoch[%d/%d]  training set accuracy: %.5f  test set accuracy: %.5f"
-                      % (epoch + 1, epochs,  accuracy_train_target, accuracy_test_target))
-        
-        if (epoch % 10 == 0 or epoch == epochs - 1) and save_new_models:
-                # Save model after each epoch
-            if not os.path.exists("./models"):
-                os.mkdir("./models")  # Create the folder models if it doesn't exist
-            torch.save(model.state_dict(), save_path)
-
+            
                 
 def accuracy(preds, labels):
     return (preds == labels).mean()
                 
-def DP_train(model, train_loader, optimizer, epoch, epochs, max_physical_batch_size, device, privacy_engine, DELTA, save_path, save_new_models = 1):
-    model.train()
-    criterion = nn.CrossEntropyLoss()
-
-    losses = []
-    top1_acc = []
-    
-    with BatchMemoryManager(
-        data_loader=train_loader, 
-        max_physical_batch_size=max_physical_batch_size, 
-        optimizer=optimizer
-    ) as memory_safe_data_loader:
-
-        for i, (images, target) in enumerate(memory_safe_data_loader):   
-            optimizer.zero_grad()
-            images = images.to(device)
-            target = target.to(device)
-
-            # compute output
-            output = model(images)
-            loss = criterion(output, target)
-
-            preds = np.argmax(output.detach().cpu().numpy(), axis=1)
-            labels = target.detach().cpu().numpy()
-
-            # measure accuracy and record loss
-            acc = accuracy(preds, labels)
-
-            losses.append(loss.item())
-            top1_acc.append(acc)
-
-            loss.backward()
-            optimizer.step()
-
-        if epoch == epochs - 1:
-            epsilon = privacy_engine.get_epsilon(DELTA)
-            print(
-                f"\tTrain Epoch: {epoch} \t"
-                f"Loss: {np.mean(losses):.6f} "
-                f"(ε = {epsilon:.2f}, δ = {DELTA})"
-            )
-
-
 def Load_shadowmodel(shadow_path, shadow_net):
     if os.path.exists(shadow_path):
         print("Load shadow model")
