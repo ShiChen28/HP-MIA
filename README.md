@@ -26,6 +26,9 @@ To address above challenge, in this paper we rethink how overfitting impacts MIA
 [Elsevier](https://www.sciencedirect.com/science/article/abs/pii/S0167404823004819)
 
 ## Citation
+
+If you use our code, please consider citing this paper:
+
 ```
 @article{Chen2024HPMIA,
   title={HP-MIA: A novel membership inference attack scheme for high membership prediction precision},
