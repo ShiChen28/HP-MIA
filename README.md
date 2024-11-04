@@ -27,7 +27,7 @@ To address above challenge, in this paper we rethink how overfitting impacts MIA
 
 ## Citation
 
-If you use our code, please consider citing this paper:
+If you use this project, please cite the relevant paper:
 
 ```
 @article{Chen2024HPMIA,
