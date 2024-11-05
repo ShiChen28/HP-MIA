@@ -5,7 +5,7 @@ HP-MIA: A novel membership inference attack scheme for high membership predictio
 
 
 ## Code
-The core of the code for HP-MIA (PyTorch implementation).
+An PyTorch implementation of HP-MIA.
 
 See more detailed instructions in the `HP-MIA` folder.
 
