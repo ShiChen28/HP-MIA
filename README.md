@@ -21,7 +21,7 @@ To address above challenge, in this paper we rethink how overfitting impacts MIA
 
 ## Paper Link
 
-[Preprint, Aminer](https://static.aminer.cn/upload/pdf/28/1035/1355/65497cb4939a5f4082b36359_1.pdf)
+[Preprint version, Aminer](https://static.aminer.cn/upload/pdf/28/1035/1355/65497cb4939a5f4082b36359_1.pdf)
 
 [Computers & Security, Elsevier](https://www.sciencedirect.com/science/article/abs/pii/S0167404823004819)
 
