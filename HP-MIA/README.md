@@ -13,7 +13,7 @@ As a test case for HP-MIA, two `ipynb` files provide the implementation on Purch
 
 The target model and shadow model will be stored in `target_shadow` folder. 100 well-trained reference models for Purchase100 are stored in `ref_purchase` folder. 
 
-In addtion, `attack_exp_purchase.ipynb` tested our Two-stage HP-MIA on Purchaser100. As a reference, we show the results of the calibrated attack (C-Loss) without using membership exclusion.
+In addtion, `attack_exp_purchase.ipynb` tested our Two-stage HP-MIA on Purchaser100. As a contrast, we show the results of the calibrated attack (C-Loss) without using membership exclusion.
 
 ## Test on your own datasets/models
 
