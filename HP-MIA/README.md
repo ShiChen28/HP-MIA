@@ -25,9 +25,10 @@ After completing the preparations for model and dataset loader, you can start yo
 
 ```
 from models import Your_Own_Model
-... ... ... 
-dataset = 'Your_Own_Dataset'
+... 
+...
 #The dataset of choice between"mnist"  ，"fashionmnist", "emnist","cifar" ,"cifar100","purchase" and "texas".(+'Your_Own_Dataset')
+dataset = 'Your_Own_Dataset'
 Net = Your_Own_Model
 ```
 
