@@ -15,13 +15,19 @@ The target model and shadow model will be stored in `target_shadow` folder. 100 
 
 In addtion, `attack_exp_purchase.ipynb` tested our Two-stage HP-MIA on Purchaser100. As a contrast, we show the results of the calibrated attack (C-Loss) without using membership exclusion.
 
-## Test on your own datasets/models
+## Test on your own models/datasets
 
-This repository only provided models trained on Purchase100. If you want to test on other datasets, please refer to `Train_ref_Purchase.ipynb` to train your own model. `models.py` includes several MLP and common CNN architectures (e.g., AlexNet, WideResNet, etc.). You can also add your own neural network models to `models.py` if needed.
+**Your Own Models :** This repository only provided models trained on Purchase100. If you want to test on other datasets, please refer to `Train_ref_Purchase.ipynb` to train your own model. `models.py` includes several MLP and common CNN architectures (e.g., AlexNet, WideResNet, etc.). You can also add your own neural network models to `models.py` if needed.
 
-The `data` folder is used to store the dataset files. Processing for seven common datasets (mnist, fashionmnist, emnist, cifar, cifar100, purchase and texas) is provided in `my_dataloader.py`. If you want to test other datasets, you need to refine the processing of the new datasets in this file. 
+**Your Own Datasets :** The `data` folder is used to store the dataset files. Processing for seven common datasets (mnist, fashionmnist, emnist, cifar, cifar100, purchase and texas) is provided in `my_dataloader.py`. If you want to test other datasets, you need to refine the processing of the new datasets in this file. 
 
 After completing the preparations for model and dataset loader, you can start your own experiments by simply modifying the variables `dataset` and `Net` in `Train_ref_Purchase.ipynb` and `attack_exp_purchase.ipynb`！
+
+```
+from models import Your_Own_Model
+dataset = 'Your_Own_Dataset'  #The dataset of choice between"mnist"  ，"fashionmnist", "emnist","cifar" ,"cifar100","purchase" and "texas".
+Net = Your_Own_Model
+```
 
 ## Acknowledgement
 This implementation references codes from [ml-leaks-pytorch](https://github.com/GeorgeTzannetos/ml-leaks-pytorch), 
