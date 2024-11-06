@@ -1,7 +1,7 @@
 # HP-MIA
 HP-MIA: A novel membership inference attack scheme for high membership prediction precision
 
-**The repository is currently being organized and is not the final version. Apologize for any inconvenience caused :sneezing_face: !**
+**The repository is currently being organized and is not the final version :sneezing_face: !**
 
 ![teaserfigure](Overview.png)
 
