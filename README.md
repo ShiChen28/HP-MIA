@@ -9,7 +9,7 @@ HP-MIA: A novel membership inference attack scheme for high membership predictio
 ##  💻 Code
 A PyTorch implementation of HP-MIA.
 
-**See usage in the `HP-MIA` folder ! **
+**See usage in the `HP-MIA` folder !**
 
 This implementation references codes from [ml-leaks-pytorch](https://github.com/GeorgeTzannetos/ml-leaks-pytorch), 
 [membership-inference-evaluation](https://github.com/inspire-group/membership-inference-evaluation) and [Purchase100 and Texas100 dataset](https://github.com/xehartnort/Purchase100-Texas100-datasets). Thank the authors for their  work!
